@@ -1,0 +1,39 @@
+.page {
+    overflow-x: scroll;
+}
+
+.wrapper {
+    width: 6000px;
+}
+
+.row {
+    height: 30px;
+}
+
+.heatmap-canvas {
+    height: 5px;
+}
+
+.items {
+    position: relative;
+}
+
+.item:nth-of-type(4n) {
+    position: absolute;
+    left: 40px;
+}
+
+.item:nth-of-type(4n + 1) {
+    position: absolute;
+    left: 400px;
+}
+
+.item:nth-of-type(4n + 2) {
+    position: absolute;
+    left: 3000px;
+}
+
+.item:nth-of-type(4n + 3) {
+    position: absolute;
+    left: 700px;
+}
