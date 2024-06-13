@@ -25,9 +25,15 @@
   <body>
     <h1>Bootstrap popover on canvas - a Playwright test</h1>
 
+    <div id="heatmap-tooltip" class="tooltip bs-tooltip-top show">
+        <div id="heatmap-tooltip-arrow" class="arrow"></div>
+        <div id="heatmap-tooltip-content" class="tooltip-inner"></div>
+    </div>
+
     <div class="page">
       <div id="wrapper">
         <!--Other stuff sits here on top of rows-->
+        <div id="heatmap-shadow"></div>
         <div class="rows">
           <div class="row">
             <div class="items">

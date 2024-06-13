@@ -22,4 +22,14 @@ function drawHeatmapCanvas() {
     }
 }
 
+function showHeatmapTooltip() {
+    const tooltip = document.getElementById("heatmap-shadow");
+    const tooltipContent = document.getElementById("heatmap-tooltip-content");
+    const tooltipArrow = document.getElementById("heatmap-tooltip-arrow");
+    const heatmapShadow = document.getElementById("heatmap-shadow");
+
+    tooltipContent.innerHTML = "Tooltip content";
+    tooltip.style.opacity = "1";
+}
+
 drawHeatmapCanvas();
