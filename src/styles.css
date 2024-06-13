@@ -1,39 +1,62 @@
-.page {
-    overflow-x: scroll;
+* {
+  box-sizing: border-box;
 }
 
-.wrapper {
-    width: 6000px;
+body {
+  padding: 15px;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+.page {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#wrapper {
+  width: 6000px;
 }
 
 .row {
-    height: 30px;
+  height: 30px;
+  position: relative;
 }
 
-.heatmap-canvas {
-    height: 5px;
+#heatmap-canvas {
+  position: absolute;
+  top: 0;
 }
 
 .items {
-    position: relative;
+  position: relative;
+  top: 5px;
+}
+
+.item {
+  background-color: antiquewhite;
+  line-height: 1;
+  padding: 5px 8px;
+  position: absolute;
+  white-space: nowrap;
+  width: 150px;
 }
 
 .item:nth-of-type(4n) {
-    position: absolute;
-    left: 40px;
+  left: 150px;
+  /* color: rgb(222, 184, 135);
+    color: ; */
 }
 
 .item:nth-of-type(4n + 1) {
-    position: absolute;
-    left: 400px;
+  left: 450px;
 }
 
 .item:nth-of-type(4n + 2) {
-    position: absolute;
-    left: 3000px;
+  left: 3000px;
 }
 
 .item:nth-of-type(4n + 3) {
-    position: absolute;
-    left: 700px;
+  left: 900px;
 }
